@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="width-device-width, initial-scale-1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<title>Abdou Kahil</title>
+</head>
+
+<body>
+	<div class="hero-header">
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<i class="fa-solid fa-a"></i>
+					<div class="logo-text">Abdou Kahil</div>
+				</div>
+				<nav>
+					<div class="togglebtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="navlinks">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Resume</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+
+			</header>
+			<div class="container">
+				<div class="heropic">
+					<img src="images/me.jpg" alt="profile pic">
+				</div>
+				<div class="hero-texte">
+					<h5>Hi i'm <span class="input">Frontend developper</span></h5>
+					<h1>Abdou Kahil</h1>
+					<p>As a passionate web developer, Abdou Kahil dreams of creating innovative and visually stunning
+						websites that captivate users. With a keen eye for design and a commitment to seamless
+						functionality, his goal is to craft digital experiences that leave a lasting impression and push
+						the boundaries of web development.</p>
+					<div class="btn-group">
+						<a href="#" class="btn active">Download CV</a>
+						<a href="#" class="btn">Contact</a>
+					</div>
+					<div class="social">
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-dribbble"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+	<script>
+		var togglebtn = document.querySelector(".togglebtn");
+		var nav = document.querySelector(".navlinks");
+		var links = document.querySelector(".navlinks li");
+
+		togglebtn.addEventListener("click", function () {
+			this.classList.toggle("click");
+			nav.classList.toggle("open");
+		});
+
+		var typed = new Typed(".input", {
+			strings: ["Frontend Developer", "Graphic Designer", "Web Developer"],
+			typeSpeed: 55,
+			backSpeed: 55,
+			loop: true
+		});
+	</script>
+
+	</script>
+
+</body>
+
+</html>
